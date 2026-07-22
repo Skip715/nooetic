@@ -100,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* Browse by category */}
-      <section className="px-6 md:px-12 py-20 bg-parchment/40">
+      <section className="px-6 md:px-12 py-20 bg-tide-teal/5">
         <div className="max-w-5xl mx-auto grid md:grid-cols-[240px_1fr] gap-10">
           <div>
             <h2 className="font-display text-4xl text-charcoal leading-tight mb-4">
@@ -156,7 +156,7 @@ export default function Home() {
       </section>
 
       {/* Membership snapshot */}
-      <section className="px-6 md:px-12 py-20 bg-parchment/40">
+      <section className="px-6 md:px-12 py-20 bg-tide-teal/5">
         <div className="grid md:grid-cols-2 gap-14 items-center max-w-5xl mx-auto">
           <div>
             <p className="text-tide-coral text-xs font-medium uppercase tracking-[0.15em] mb-4">
@@ -178,7 +178,7 @@ export default function Home() {
             </ul>
             <a
               href="/join"
-              className="inline-block bg-charcoal text-white px-7 py-3 font-medium hover:bg-tide-teal transition-colors"
+              className="inline-block bg-tide-teal text-white px-7 py-3 font-medium hover:bg-tide-coral transition-colors"
             >
               Become a member
             </a>
