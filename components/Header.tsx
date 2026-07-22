@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const NAV_LINKS = [
   { label: "Membership", href: "/pricing" },
   { label: "Partner brands", href: "/offers" },
@@ -20,20 +22,27 @@ export default function Header() {
         FOUNDING MEMBERS SAVE 20% FOR THEIR FIRST YEAR
       </div>
 
-      <header className="flex items-center justify-between px-6 md:px-12 py-6 bg-white border-b border-charcoal/10">
-        <p className="font-display text-2xl text-charcoal tracking-wide">
-          Nooetic
-        </p>
+      <header className="flex items-center justify-between px-6 md:px-12 py-4 bg-white border-b border-charcoal/10">
+        <a href="/" className="shrink-0">
+          <Image
+            src="/logo.svg"
+            alt="Nooetic"
+            width={220}
+            height={69}
+            className="h-12 md:h-14 w-auto"
+            priority
+          />
+        </a>
         <nav className="hidden md:flex items-center gap-8 text-sm text-charcoal/75">
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-sage-deep">
+            <a key={link.href} href={link.href} className="hover:text-tide-coral">
               {link.label}
             </a>
           ))}
         </nav>
         <a
           href="/join"
-          className="bg-charcoal text-white text-sm font-medium px-6 py-2.5 hover:bg-sage-deep transition-colors"
+          className="bg-charcoal text-white text-sm font-medium px-6 py-2.5 hover:bg-tide-coral transition-colors"
         >
           Join now
         </a>

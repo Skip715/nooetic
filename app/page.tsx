@@ -68,15 +68,15 @@ export default function Home() {
       <section className="grid md:grid-cols-2">
         <div className="relative h-[420px] md:h-[640px]">
           <Image
-            src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1200&q=80"
-            alt="Wellness still life"
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&q=80"
+            alt="Woman enjoying a wellness ritual"
             fill
             className="object-cover"
             priority
           />
         </div>
         <div className="flex flex-col justify-center px-8 md:px-20 py-16 md:py-0 bg-white text-center md:text-left">
-          <p className="text-clay text-xs font-medium uppercase tracking-[0.2em] mb-6">
+          <p className="text-tide-coral text-xs font-medium uppercase tracking-[0.2em] mb-6">
             The UK&rsquo;s fastest-growing wellness discount platform
           </p>
           <h1 className="font-display text-5xl md:text-6xl leading-tight text-charcoal mb-6">
@@ -92,7 +92,7 @@ export default function Home() {
           </p>
           <a
             href="/join"
-            className="inline-block w-fit mx-auto md:mx-0 bg-charcoal text-white px-7 py-3 font-medium hover:bg-sage-deep transition-colors"
+            className="inline-block w-fit mx-auto md:mx-0 bg-charcoal text-white px-7 py-3 font-medium hover:bg-tide-coral transition-colors"
           >
             Join now
           </a>
@@ -136,7 +136,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {DEALS.map((deal) => (
               <div key={deal.title}>
-                <span className="inline-block bg-sage-deep text-parchment text-[10px] font-semibold tracking-wide px-3 py-1 mb-3">
+                <span className="inline-block bg-tide-coral text-white text-[10px] font-semibold tracking-wide px-3 py-1 mb-3">
                   {deal.tag}
                 </span>
                 <div className="relative h-48 rounded overflow-hidden mb-3">
@@ -145,8 +145,8 @@ export default function Home() {
                 <p className="font-display text-lg text-charcoal mb-1">
                   {deal.title}
                 </p>
-                <p className="text-clay text-sm font-medium mb-4">{deal.price}</p>
-                <button className="w-full border border-charcoal text-charcoal text-sm font-medium py-2.5 hover:bg-charcoal hover:text-white transition-colors">
+                <p className="text-tide-teal text-sm font-medium mb-4">{deal.price}</p>
+                <button className="w-full border border-charcoal text-charcoal text-sm font-medium py-2.5 hover:bg-tide-teal hover:text-white hover:border-tide-teal transition-colors">
                   View deal
                 </button>
               </div>
@@ -159,7 +159,7 @@ export default function Home() {
       <section className="px-6 md:px-12 py-20 bg-parchment/40">
         <div className="grid md:grid-cols-2 gap-14 items-center max-w-5xl mx-auto">
           <div>
-            <p className="text-clay text-xs font-medium uppercase tracking-[0.15em] mb-4">
+            <p className="text-tide-coral text-xs font-medium uppercase tracking-[0.15em] mb-4">
               One membership
             </p>
             <h2 className="font-display text-4xl text-charcoal mb-5 leading-tight">
@@ -178,7 +178,7 @@ export default function Home() {
             </ul>
             <a
               href="/join"
-              className="inline-block bg-charcoal text-white px-7 py-3 font-medium hover:bg-sage-deep transition-colors"
+              className="inline-block bg-charcoal text-white px-7 py-3 font-medium hover:bg-tide-teal transition-colors"
             >
               Become a member
             </a>
