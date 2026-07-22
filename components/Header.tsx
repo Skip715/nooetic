@@ -1,7 +1,7 @@
 const NAV_LINKS = [
-  { label: "Pricing", href: "/pricing" },
-  { label: "Wellness offers", href: "/offers" },
-  { label: "Partners", href: "/partners" },
+  { label: "Membership", href: "/pricing" },
+  { label: "Partner brands", href: "/offers" },
+  { label: "Become a partner", href: "/partners" },
   { label: "Journal", href: "/journal" },
   { label: "About", href: "/about" },
 ];
@@ -10,29 +10,30 @@ export default function Header() {
   return (
     <>
       {/* TODO: replace with client's real launch offer */}
-      <div className="bg-gold-tint text-charcoal text-xs font-medium tracking-wide text-center py-2 px-4">
-        Founding members save 20% for their first year — join before launch
+      <div className="bg-gold-tint/60 text-charcoal text-xs text-center py-2.5 px-4">
+        New partner brands added every month.{" "}
+        <a href="/offers" className="underline font-medium">
+          See what&rsquo;s live
+        </a>
       </div>
-      <div className="bg-charcoal text-parchment/90 text-xs tracking-wide text-center py-2.5 px-4">
-        GET 25% OFF YOUR FIRST CONSULTATION
+      <div className="bg-charcoal text-parchment text-xs tracking-wide text-center py-2.5 px-4">
+        FOUNDING MEMBERS SAVE 20% FOR THEIR FIRST YEAR
       </div>
 
-      <header className="flex items-center justify-between px-6 md:px-12 py-5 bg-sage-deep">
-        <div>
-          <p className="font-display text-2xl text-parchment tracking-wide">
-            Nooetic
-          </p>
-        </div>
-        <nav className="hidden md:flex items-center gap-8 text-sm text-parchment/80">
+      <header className="flex items-center justify-between px-6 md:px-12 py-6 bg-white border-b border-charcoal/10">
+        <p className="font-display text-2xl text-charcoal tracking-wide">
+          Nooetic
+        </p>
+        <nav className="hidden md:flex items-center gap-8 text-sm text-charcoal/75">
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-gold-tint">
+            <a key={link.href} href={link.href} className="hover:text-sage-deep">
               {link.label}
             </a>
           ))}
         </nav>
         <a
           href="/join"
-          className="bg-clay text-white text-sm font-medium px-6 py-2.5 rounded-pill hover:bg-clay-dark transition-colors"
+          className="bg-charcoal text-white text-sm font-medium px-6 py-2.5 hover:bg-sage-deep transition-colors"
         >
           Join now
         </a>

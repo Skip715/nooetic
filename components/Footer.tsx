@@ -15,13 +15,14 @@ const COLUMNS = [
 
 export default function Footer() {
   return (
-    <footer className="bg-sage-deep text-parchment px-6 md:px-12 py-14">
+    <footer className="bg-charcoal text-parchment px-6 md:px-12 py-14">
       <div className="grid md:grid-cols-4 gap-10">
         <div>
           <p className="font-display text-xl mb-3">Nooetic</p>
           <p className="text-sm text-parchment/70 max-w-xs">
-            The UK wellness membership network. Making regulated wellness
-            simpler, faster, and more affordable.
+            The UK&rsquo;s fastest-growing wellness discount platform —
+            connecting members to licensed clinics and exclusive wellness
+            brands, products, and travel partners.
           </p>
         </div>
         {COLUMNS.map((col) => (
