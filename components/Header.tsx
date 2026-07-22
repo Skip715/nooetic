@@ -9,23 +9,23 @@ const NAV_LINKS = [
 export default function Header() {
   return (
     <>
-      {/* TODO: replace with client's real launch offer / social links */}
-      <div className="bg-sage-deep text-parchment text-xs tracking-wide text-center py-2 px-4">
+      {/* TODO: replace with client's real launch offer */}
+      <div className="bg-gold-tint text-charcoal text-xs font-medium tracking-wide text-center py-2 px-4">
         Founding members save 20% for their first year — join before launch
       </div>
+      <div className="bg-charcoal text-parchment/90 text-xs tracking-wide text-center py-2.5 px-4">
+        GET 25% OFF YOUR FIRST CONSULTATION
+      </div>
 
-      <header className="flex flex-col items-center gap-4 px-6 md:px-12 py-8 bg-parchment border-b border-charcoal/10">
-        <div className="text-center">
-          <p className="font-display text-3xl tracking-wide text-sage-deep">
+      <header className="flex items-center justify-between px-6 md:px-12 py-5 bg-sage-deep">
+        <div>
+          <p className="font-display text-2xl text-parchment tracking-wide">
             Nooetic
           </p>
-          <p className="text-[11px] uppercase tracking-[0.2em] text-charcoal/50 mt-1">
-            Rituals for regulated wellness
-          </p>
         </div>
-        <nav className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-sm text-charcoal/80">
+        <nav className="hidden md:flex items-center gap-8 text-sm text-parchment/80">
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-sage-deep">
+            <a key={link.href} href={link.href} className="hover:text-gold-tint">
               {link.label}
             </a>
           ))}
