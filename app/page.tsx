@@ -64,27 +64,36 @@ export default function Home() {
     <>
       <Header />
 
-      {/* Hero */}
-      <section className="grid md:grid-cols-2">
-        <div className="relative h-[420px] md:h-[640px]">
-          <Image
-            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=1200&q=80"
-            alt="Woman enjoying a wellness ritual"
-            fill
-            className="object-cover"
-            priority
+      {/* Hero — full-bleed photo, colour wash, overlaid text, logo prominent */}
+      <section className="relative min-h-[560px] md:min-h-[680px] flex items-end">
+        <Image
+          src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?w=1600&q=80"
+          alt="Woman enjoying a wellness ritual"
+          fill
+          className="object-cover -z-10"
+          priority
+        />
+        <div
+          className="absolute inset-0 -z-10"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(31,92,82,0.15) 0%, rgba(42,37,33,0.8) 100%)",
+          }}
+        />
+        <div className="px-8 md:px-16 py-12 md:py-16 max-w-2xl">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-on-teal.svg"
+            alt="Nooetic"
+            className="h-14 md:h-20 w-auto mb-8"
           />
-        </div>
-        <div className="flex flex-col justify-center px-8 md:px-20 py-16 md:py-0 bg-white text-center md:text-left">
-          <p className="text-tide-coral text-xs font-medium uppercase tracking-[0.2em] mb-6">
+          <p className="text-gold-tint text-xs font-medium uppercase tracking-[0.2em] mb-5">
             The UK&rsquo;s fastest-growing wellness discount platform
           </p>
-          <h1 className="font-display text-5xl md:text-6xl leading-tight text-charcoal mb-6">
-            More wellness.
-            <br />
-            Less spend.
+          <h1 className="font-display text-5xl md:text-6xl leading-tight text-white mb-6">
+            More wellness. Less spend.
           </h1>
-          <p className="text-charcoal/70 text-lg mb-8 max-w-sm mx-auto md:mx-0">
+          <p className="text-white/85 text-lg mb-8 max-w-md">
             {/* TODO: replace with client copy */}
             One membership connects you to licensed medical clinics and
             exclusive discounts on wellness products, retreats, and travel
@@ -92,7 +101,7 @@ export default function Home() {
           </p>
           <a
             href="/join"
-            className="inline-block w-fit mx-auto md:mx-0 bg-charcoal text-white px-7 py-3 font-medium hover:bg-tide-coral transition-colors"
+            className="inline-block w-fit bg-tide-coral text-white px-7 py-3 font-medium hover:bg-clay-dark transition-colors"
           >
             Join now
           </a>
