@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy: #0d1b2a;
+  --color-blue: #1e90ff;
+  --color-yellow: #ffd62e;
+  --color-mist: #f5f7fa;
+  --color-charcoal: #1c1c1c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--color-charcoal);
+  background-color: #ffffff;
+}
+
+::selection {
+  background-color: var(--color-yellow);
+  color: var(--color-navy);
+}
